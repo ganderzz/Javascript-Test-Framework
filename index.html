@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<head>
+		<title>Javascript Parser</title>
+
+		<meta name="author" content="Dylan Paulus">
+
+		<link rel="stylesheet" type="text/css" href="dist/main.min.css">
+	</head>
+	<body>
+		<section class="container">
+			<header class="row main__header">
+				<div class="twelve columns">
+					<h4>JavaScript Parser</h4>
+				</div>
+			</header>
+
+			<div class="row rules">
+				<div class="five columns offset-by-one">
+					<strong>Write a JavaScript program containing the criteria below:</strong>
+
+					<ul class="rules__list">
+						<li class="rule__one">Use a variable declaration</li>
+						<li class="rule__two is--complete">Do <i>not</i> use a while loop</li>
+						<li class="rule__three">Have an if statement inside of a for loop</li>
+					</ul>		
+				</div>
+
+				<div class="four columns text-center">
+					<img src="images/complete.gif" alt="Completion Image" class="complete is--hidden" />
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="ten columns offset-by-one error">
+					<ul class="error__log">
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="ten columns offset-by-one parser">
+					<textarea class="u-full-width parser__textarea"></textarea>
+				</div>
+			</div>
+		</section>
+
+		<script src="dist/main.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "codeparser",
+  "version": "1.0.0",
+  "description": "Code test parser",
+  "main": "index.js",
+  "dependencies": {
+    "codemirror": "^5.19.0",
+    "esprima": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  },
+  "scripts": {
+    "minify": "npm run minify:js && npm run minify:css",
+    "minify:js": "cat node_modules/codemirror/lib/codemirror.js node_modules/codemirror/mode/javascript/javascript.js node_Modules/esprima/dist/esprima.js scripts/challengeFramework.js scripts/main.js > dist/main.min.js",
+    "minify:css": "cat styles/normalize.css styles/skeleton.css node_modules/codemirror/lib/codemirror.css styles/main.css > dist/main.min.css",
+    "tests": "mocha"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "html",
+    "esprima",
+    "codemirror"
+  ],
+  "author": "Dylan Paulus"
+}
